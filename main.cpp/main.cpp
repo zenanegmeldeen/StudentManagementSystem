@@ -72,6 +72,7 @@ int main()
     cout << "3. Exit" << endl;
     cout << "4. Search Student" << endl;
     cout<<"5. Delet Student"<<endl;
+    cout << "6. Update Student" << endl;
        cout << "Enter choice: ";
 cin >> choice;
     if (choice == 1)
@@ -177,7 +178,48 @@ else if(choice==5){
     }
 }
     }
+    else if(choice ==6){
+        string target;
+        bool found= false;
+        cin.ignore();
+        cout<<"Enter student name to update"<<endl;
+         getline(cin , target);
+         for(int i =0 ; i<studentCount;i++){
+            if (students[i].getname()==target){
+                int newAge;
+                float newGrade;
+                do
+                {
+                  cout<<"Enter you new age"<<endl;
+                  cin>>newAge;
+                  if(newAge<=0)
+                  {
 
+                      cout<<"invalid age! please enter positive number"<<endl;
+                  }
+                }
+                while (newAge<=0);
+                do{
+                    cout<< "Enter your new grade"<<endl;
+                    cin>>newGrade;
+                   if(newGrade<0 || newGrade>100){
+cout<<"invalid grade ! please enter a value from 0 to 100"<<endl;
+}
+}
+        while (newGrade<0 || newGrade>100);
+students[i].setAge(newAge);
+students[i].setGrade(newGrade)
+cout<<"student updated successfully"<<endl;
+ found=true;
+    break;
+
+}
+}
+    if(! found){
+    cout<<"student not found"<<endl;
+   }
+}
+}
     while (choice != 3);
 
     return 0;
