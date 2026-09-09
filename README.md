@@ -12,6 +12,9 @@ A simple Student Management System built with C++.
 - Calculate letter grades
 - Validate age and grade
 - Menu-based console interface
+- ## Screenshot
+
+![Student Management System](screenshot.png)
 
 ## Technologies
 
