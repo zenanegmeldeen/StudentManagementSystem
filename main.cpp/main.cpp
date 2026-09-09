@@ -71,7 +71,7 @@ int main()
     cout << "2. Show Students" << endl;
     cout << "3. Exit" << endl;
     cout << "4. Search Student" << endl;
-    cout<<"5. Delet student"<<endl;
+    cout<<"5. Delet Student"<<endl;
        cout << "Enter choice: ";
 cin >> choice;
     if (choice == 1)
