@@ -8,6 +8,7 @@ A simple Student Management System built with C++.
 - Show students
 - Search for a student
 - Delete a student
+- Update student information
 - Calculate letter grades
 - Validate age and grade
 - Menu-based console interface
